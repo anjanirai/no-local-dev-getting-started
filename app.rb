@@ -10,7 +10,7 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
+class Loyalty_Point__c < ActiveRecord::Base
   self.table_name = 'salesforce.Loyalty_Point__c'
 end
 
