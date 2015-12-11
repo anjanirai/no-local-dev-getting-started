@@ -14,10 +14,10 @@ class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.Loyalty_Point__c'
 end
 
-#get "/contacts" do
-#  @contacts = Contact.all
-#  erb :index
-#end
+get "/Loyalty" do
+ @Loyalty = Loyalty_Point__c.all
+  erb :index
+end
 
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
