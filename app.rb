@@ -10,12 +10,12 @@ get "/" do
 end
 
 
-class Loyalty < ActiveRecord::Base
+class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.Loyalty_Point__c'
 end
 
-get "/Loyalty" do
- @Loyalty = Loyalty_Point__c.all
+get "/contacts" do
+  @contacts = Contact.all
   erb :index
 end
 
