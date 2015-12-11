@@ -15,7 +15,7 @@ class Contact < ActiveRecord::Base
 end
 
 get "/contacts" do
-  @contacts = Loyalty_Point__c.all
+  @contacts = Contact.all
   erb :index
 end
 
